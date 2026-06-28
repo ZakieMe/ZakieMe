@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Jouqio/Jouqio/main/assets/hero.svg" width="100%" alt="Syauqi Nuzul Abdi — Software Engineer. AI, Web Development, Renewable Energy."/>
+<img src="https://raw.githubusercontent.com/Jouqio/Jouqio/main/hero.svg" width="100%" alt="Syauqi Nuzul Abdi — Software Engineer. AI, Web Development, Renewable Energy."/>
 
 **[Email](mailto:nuzulabdisyauqi@gmail.com)** · [GitHub](https://github.com/Jouqio) · [Instagram](https://instagram.com/syauqinzul)
 
@@ -215,6 +215,6 @@ What it takes for an AI tutor to teach well, not just answer correctly.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Jouqio/Jouqio/main/assets/footer.svg" width="100%" alt="Software, like renewable energy, only matters if it still works after the novelty wears off. — Syauqi Nuzul Abdi, Bontang, Indonesia"/>
+<img src="https://raw.githubusercontent.com/Jouqio/Jouqio/main/footer.svg" width="100%" alt="Software, like renewable energy, only matters if it still works after the novelty wears off. — Syauqi Nuzul Abdi, Bontang, Indonesia"/>
 
 </div>

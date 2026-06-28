@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1200 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Syauqi Nuzul Abdi — Software Engineer. AI, Web Development, Renewable Energy.">
+<defs>
+
+  <radialGradient id="auroraEmerald" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#10B981" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="auroraCyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="auroraPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.28"/>
+    <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+  </radialGradient>
+
+  <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#E6FFFB" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#E6FFFB" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#E6FFFB" stop-opacity="0"/>
+  </linearGradient>
+
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+    <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#1B2230" stroke-width="1"/>
+  </pattern>
+
+  <filter id="blurXL" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="55"/>
+  </filter>
+  <filter id="blurL" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="40"/>
+  </filter>
+  <filter id="textBlur" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4.5"/>
+  </filter>
+
+  <style>
+    .blobA   { animation: driftA 15s ease-in-out infinite; }
+    .blobB   { animation: driftB 18s ease-in-out infinite; }
+    .blobC   { animation: driftC 21s ease-in-out infinite; }
+    @keyframes driftA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(26px,-18px); } }
+    @keyframes driftB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-30px,16px); } }
+    @keyframes driftC { 0%,100% { transform: translate(0,0); } 50% { transform: translate(14px,20px); } }
+
+    .sweep { animation: sweep 9s ease-in-out infinite; }
+    @keyframes sweep {
+      0%   { transform: translateX(-320px); opacity: 0; }
+      6%   { opacity: .9; }
+      42%  { transform: translateX(1450px); opacity: 0; }
+      100% { transform: translateX(1450px); opacity: 0; }
+    }
+
+    .particle { animation-name: twinkle; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+    @keyframes twinkle { 0%,100% { opacity: .05; } 50% { opacity: .7; } }
+
+    .pulseDot { animation: pulseDot 2.4s ease-in-out infinite; }
+    @keyframes pulseDot { 0%,100% { opacity:.35; r:2.6; } 50% { opacity:1; r:3.4; } }
+
+    .frame { animation: frameGlow 5s ease-in-out infinite; }
+    @keyframes frameGlow { 0%,100% { opacity:.28; } 50% { opacity:.55; } }
+
+    .rot text { opacity: 0; animation: rot 12s infinite; }
+    #r1 { animation-delay: 0s; }
+    #r2 { animation-delay: 3s; }
+    #r3 { animation-delay: 6s; }
+    #r4 { animation-delay: 9s; }
+    @keyframes rot {
+      0%   { opacity: 0; }
+      3%   { opacity: 1; }
+      21%  { opacity: 1; }
+      26%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .chev { animation: chevBounce 1.8s ease-in-out infinite; }
+    @keyframes chevBounce { 0%,100% { transform: translateY(0); opacity:.5; } 50% { transform: translateY(5px); opacity:1; } }
+
+    .scanline { animation: scan 5s linear infinite; }
+    @keyframes scan { 0% { opacity:0; } 8% { opacity:.5; } 16% { opacity:0; } 100% { opacity:0; } }
+  </style>
+</defs>
+
+<!-- base -->
+<rect width="1200" height="580" fill="#0D1117"/>
+<rect width="1200" height="580" fill="url(#grid)" opacity="0.5"/>
+
+<!-- aurora -->
+<g class="blobA"><circle cx="230" cy="150" r="230" fill="url(#auroraEmerald)" filter="url(#blurXL)"/></g>
+<g class="blobB"><circle cx="970" cy="430" r="210" fill="url(#auroraCyan)" filter="url(#blurXL)"/></g>
+<g class="blobC"><circle cx="640" cy="500" r="170" fill="url(#auroraPurple)" filter="url(#blurL)"/></g>
+
+<!-- light sweep -->
+<rect class="sweep" x="0" y="0" width="160" height="580" fill="url(#sweepGrad)" transform="skewX(-12)"/>
+
+<!-- scanline -->
+<rect class="scanline" x="0" y="0" width="1200" height="2" fill="#10B981"/>
+
+<!-- AI node motif (top right, faint) -->
+<g opacity="0.28" stroke="#22D3EE" stroke-width="0.8">
+  <line x1="980" y1="92" x2="1038" y2="70"/>
+  <line x1="980" y1="92" x2="1024" y2="128"/>
+  <line x1="1038" y1="70" x2="1090" y2="96"/>
+  <line x1="1024" y1="128" x2="1090" y2="96"/>
+  <line x1="1024" y1="128" x2="970" y2="150"/>
+</g>
+<g fill="#22D3EE" opacity="0.55">
+  <circle cx="980" cy="92" r="3" class="pulseDot" style="animation-delay:0s"/>
+  <circle cx="1038" cy="70" r="3" class="pulseDot" style="animation-delay:.6s"/>
+  <circle cx="1090" cy="96" r="3" class="pulseDot" style="animation-delay:1.2s"/>
+  <circle cx="1024" cy="128" r="3" class="pulseDot" style="animation-delay:1.8s"/>
+  <circle cx="970" cy="150" r="3" class="pulseDot" style="animation-delay:.3s"/>
+</g>
+
+<!-- renewable energy motif (bottom left, faint, slow rotation) -->
+<g opacity="0.22">
+  <g transform="translate(120,470)">
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="26s" repeatCount="indefinite" additive="sum"/>
+    <line x1="0" y1="0" x2="0" y2="-46" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="40" y2="23" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-40" y2="23" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <circle cx="120" cy="470" r="4" fill="#10B981"/>
+  <line x1="120" y1="470" x2="120" y2="520" stroke="#10B981" stroke-width="3"/>
+</g>
+
+<!-- corner brackets -->
+<g stroke="#10B981" stroke-width="2" fill="none" class="frame">
+  <path d="M22,42 L22,22 L42,22"/>
+  <path d="M1158,22 L1178,22 L1178,42"/>
+  <path d="M1178,538 L1178,558 L1158,558"/>
+  <path d="M42,558 L22,558 L22,538"/>
+</g>
+
+<!-- HUD micro labels -->
+<text x="40" y="36" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#10B981" opacity="0.55">● SYSTEM ONLINE</text>
+<text x="1160" y="36" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#8B949E" opacity="0.5">MODE: BUILD</text>
+
+<!-- main content -->
+<g text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif">
+
+  <text x="600" y="146" font-family="'JetBrains Mono', Consolas, monospace" font-size="16" letter-spacing="2" fill="#10B981" opacity="0.85">// AI · WEB DEVELOPMENT · RENEWABLE ENERGY</text>
+
+  <!-- name: blurred emerald glow layer behind crisp white text (avoids multi-tspan anchor bugs) -->
+  <text x="600" y="240" font-size="66" font-weight="700" fill="#10B981" opacity="0.55" filter="url(#textBlur)">SYAUQI NUZUL ABDI</text>
+  <text x="600" y="240" font-size="66" font-weight="700" fill="#F0F6FC">SYAUQI NUZUL ABDI</text>
+  <rect x="465" y="256" width="270" height="3" fill="#10B981" opacity="0.8"/>
+
+  <text x="600" y="282" font-family="'JetBrains Mono', Consolas, monospace" font-size="16" letter-spacing="1" fill="#8B949E">SOFTWARE ENGINEER · BONTANG INSTITUTE OF TECHNOLOGY · INDONESIA</text>
+
+  <g>
+    <text x="565" y="323" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#8B949E">also building under</text>
+    <rect x="576" y="305" width="76" height="26" rx="13" fill="none" stroke="#10B981" stroke-opacity="0.55" stroke-width="1.2"/>
+    <text x="614" y="322" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700" fill="#10B981">Jouqio</text>
+  </g>
+
+  <text x="600" y="378" font-size="21" fill="#E6EDF3">I build production-grade software at the intersection of</text>
+  <text x="600" y="406" font-size="21" fill="#E6EDF3">AI, modern web development, and renewable energy — not demos.</text>
+
+  <g class="rot">
+    <text id="r1" x="600" y="460" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" fill="#22D3EE">Building AI-Powered Software</text>
+    <text id="r2" x="600" y="460" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" fill="#22D3EE">Modern Web Development</text>
+    <text id="r3" x="600" y="460" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" fill="#22D3EE">Renewable Energy Advocate</text>
+    <text id="r4" x="600" y="460" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" fill="#22D3EE">Code · Learn · Improve</text>
+  </g>
+</g>
+
+<!-- scroll indicator -->
+<text x="600" y="528" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" letter-spacing="2" fill="#8B949E" opacity="0.8">SCROLL TO EXPLORE</text>
+<path class="chev" d="M592,540 L600,548 L608,540" stroke="#10B981" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<line x1="40" y1="566" x2="1160" y2="566" stroke="#30363D" stroke-width="1"/>
+</svg>
